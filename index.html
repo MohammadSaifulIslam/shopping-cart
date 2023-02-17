@@ -34,7 +34,7 @@
                             <span class="font-bold text-lg">8 Items</span>
                             <span class="text-info">Subtotal: $999</span>
                             <div class="card-actions">
-                                <button class="btn btn-primary btn-block">View cart</button>
+                                <button id="view-cart" class="btn btn-primary btn-block">View cart</button>
                             </div>
                         </div>
                     </div>
@@ -60,19 +60,19 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="grid grid-cols-1 md:grid-cols-2 mx-6 md:mx-12 my-12">
-            <div class="product-container grid grid-cols-1 md:grid-cols-2 gap-6">
+    <main class="mx-2 md:mx-12">
+        <section class=" my-12">
+            <div class="product-container grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div class="col">
                     <div class="card card-compact bg-base-100 shadow-xl">
                         <figure><img class="h-44 w-full" src="img/vue-js.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Vue JS</h2>
+                          <h2 id="p-one-name" class="card-title">Vue JS</h2>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam mollitia atque nobis itaque, dolorum dolores non. Sunt, maxime quis.</p>
-                          <p class=" text-base mb-3">Quantity: <span>1</span></p>
-                          <p class="font-medium text-xl mb-5">Price: $<span>19</span></p>
+                          <p class=" text-base mb-3">Quantity: <span id="p-one-quantity">2</span></p>
+                          <p class="font-medium text-xl mb-5">Price: $<span id="p-one-price">19</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to cart</button>
+                            <button id="shopping-cart-1" class="btn btn-primary">Add to cart</button>
                           </div>
                         </div>
                       </div>
@@ -81,12 +81,12 @@
                     <div class="card card-compact bg-base-100 shadow-xl">
                         <figure><img class="h-44 w-full" src="img/umbrella.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Umbrella JS</h2>
+                          <h2 id="p-two-name" class="card-title">Umbrella JS</h2>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam mollitia atque nobis itaque, dolorum dolores non. Sunt, maxime quis.</p>
-                          <p class=" text-base mb-3">Quantity: <span>1</span></p>
-                          <p class="font-medium text-xl mb-5">Price: $<span>29</span></p>
+                          <p class=" text-base mb-3">Quantity: <span id="p-two-quantity">4</span></p>
+                          <p class="font-medium text-xl mb-5">Price: $<span id="p-two-price">29</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to cart</button>
+                            <button id="shopping-cart-2" class="btn btn-primary">Add to cart</button>
                           </div>
                         </div>
                       </div>
@@ -95,12 +95,12 @@
                     <div class="card card-compact bg-base-100 shadow-xl">
                         <figure><img class="h-44 w-full" src="img/coffee.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Coffee JS</h2>
+                          <h2 id="p-three-name" class="card-title">Coffee JS</h2>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam mollitia atque nobis itaque, dolorum dolores non. Sunt, maxime quis.</p>
-                          <p class=" text-base mb-3">Quantity: <span>1</span></p>
-                          <p class="font-medium text-xl mb-5">Price: $<span>25</span></p>
+                          <p class=" text-base mb-3">Quantity: <span id="p-three-quantity">6</span></p>
+                          <p class="font-medium text-xl mb-5">Price: $<span id="p-three-price">25</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to cart</button>
+                            <button id="shopping-cart-3" class="btn btn-primary">Add to cart</button>
                           </div>
                         </div>
                       </div>
@@ -109,12 +109,12 @@
                     <div class="card card-compact bg-base-100 shadow-xl">
                         <figure><img class="h-44 w-full" src="img/heart_js.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Heart JS</h2>
+                          <h2 id="p-four-name" class="card-title">Heart JS</h2>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam mollitia atque nobis itaque, dolorum dolores non. Sunt, maxime quis.</p>
-                          <p class=" text-base mb-3">Quantity: <span>1</span></p>
-                          <p class="font-medium text-xl mb-5">Price: $<span>34</span></p>
+                          <p class=" text-base mb-3">Quantity: <span id="p-four-quantity">3</span></p>
+                          <p class="font-medium text-xl mb-5">Price: $<span id="p-four-price">34</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to cart</button>
+                            <button  id="shopping-cart-4" class="btn btn-primary">Add to cart</button>
                           </div>
                         </div>
                       </div>
@@ -123,35 +123,43 @@
                     <div class="card card-compact bg-base-100 shadow-xl">
                         <figure><img class="h-44 w-full" src="img/panda.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Panda JS</h2>
+                          <h2 id="p-five-name" class="card-title">Panda JS</h2>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam mollitia atque nobis itaque, dolorum dolores non. Sunt, maxime quis.</p>
-                          <p class=" text-base mb-3">Quantity: <span>1</span></p>
-                          <p class="font-medium text-xl mb-5">Price: $<span>45</span></p>
+                          <p class=" text-base mb-3">Quantity: <span id="p-five-quantity">4</span></p>
+                          <p class="font-medium text-xl mb-5">Price: $<span id="p-five-price">45</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to cart</button>
+                            <button id="shopping-cart-5" class="btn btn-primary">Add to cart</button>
                           </div>
                         </div>
                       </div>
                 </div>
             </div>
-            <div class="product-cart">
+            
+        </section>
+        <section>
+            <div class="product-cart my-12 ">
                 <h3 class="text-center font-semibold text-4xl">Your Shopping Cart</h3>
-                <table class="table w-3/4 mx-auto mt-6">
-                    <thead>
-                        <tr>
-                            <td>No</td>
-                            <td>Name</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                            <td>Total</td>
+            <table id="table" class="table table-zebra w-full md:w-3/4 mx-auto mt-6">
+                    <thead >
+                        <tr >
+                            <td class="bg-emerald-500">Name</td>
+                            <td class="bg-emerald-500">Quantity</td>
+                            <td class="bg-emerald-500">Price</td>
+                            <td class="bg-emerald-500">Total</td>
+                            <td class="bg-emerald-500">Remove</td>
+                            
                         </tr>
                     </thead>
+                    <tbody id="table-container" class="">
+                        
+                    </tbody>
                 </table>
             </div>
         </section>
     </main>
     <!-- js file link  -->
     <script src="js/shoping-cart.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
